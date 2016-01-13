@@ -30,3 +30,10 @@ if check_list(grocery_list, "bananas")
 else
   puts "You need to pick up bananas"
 end
+puts " "
+
+puts "The second item on the list is #{grocery_list[1]}"
+puts " "
+
+print_list(grocery_list.sort)
+puts " "
