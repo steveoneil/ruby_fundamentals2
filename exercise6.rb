@@ -14,7 +14,7 @@ def check_list(list, check_item)
   list.any? { |item| item == check_item }
 end
 
-grocery_list = ["tortilla shells", "ground beef", "limes", "salsa", "jalapeno peppers", "avocados"]
+grocery_list = ["tortilla shells", "ground beef", "limes", "salsa", "jalapeno peppers", "avocados", "salmon"]
 print_list(grocery_list)
 puts " "
 
@@ -36,4 +36,8 @@ puts "The second item on the list is #{grocery_list[1]}"
 puts " "
 
 print_list(grocery_list.sort)
+puts " "
+
+new_list = grocery_list.delete_if { |item| item == "salmon" }
+print_list(new_list.sort)
 puts " "
