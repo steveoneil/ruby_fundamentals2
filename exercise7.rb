@@ -14,3 +14,9 @@ students = {
 }
 
 cohort_display(students)
+puts ""
+
+students[:cohort4] = 43
+
+cohort_display(students)
+puts ""
