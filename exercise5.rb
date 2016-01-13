@@ -4,6 +4,6 @@ def fahr_to_Cel(f)
     puts "#{f} degrees Fahrenheit is equal to #{c} degrees Celsius"
 end
 
-puts "Please enter a number representing a temperature in Fahrenheit"
+print "Please enter a number representing a temperature in Fahrenheit: "
 f_temp = gets.chomp
 fahr_to_Cel(f_temp)
