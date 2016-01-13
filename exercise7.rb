@@ -40,3 +40,6 @@ puts ""
 students = cohort_increase(students, 5)
 cohort_display(students)
 puts ""
+
+students.delete(:cohort2)
+cohort_display(students)
