@@ -55,3 +55,7 @@ cohort_display(students)
 puts " "
 
 puts "The total number of students across all cohorts is #{cohort_sum(students)}"
+puts " "
+
+puts "Using the \"inject\" method, there are #{students.values.inject(:+).to_i} students"
+puts " "
