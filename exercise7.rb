@@ -20,6 +20,15 @@ def cohort_increase(cohort_list, increase)
   new_cohort_list
 end
 
+def cohort_sum(cohort_list)
+  cohort_total = 0
+  cohort_list.each do |cohort_num, student_count|
+    cohort_total += student_count.to_i
+  end
+  return cohort_total
+end
+
+
 students = {
   :cohort1 => 34,
   :cohort2 => 42,
@@ -43,3 +52,6 @@ puts ""
 
 students.delete(:cohort2)
 cohort_display(students)
+puts " "
+
+puts "The total number of students across all cohorts is #{cohort_sum(students)}"
